@@ -15,6 +15,7 @@ namespace winrt::RichEdit::implementation
 void ReactPackageProvider::CreatePackage(IReactPackageBuilder const &packageBuilder) noexcept
 {
   AddAttributedModules(packageBuilder, true);
+  RegisterRichEditComponentView(packageBuilder);
 }
 
 } // namespace winrt::RichEdit::implementation
